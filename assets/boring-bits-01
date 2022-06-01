@@ -7,6 +7,11 @@
 // Follow the instructions carefully. They will be repetitive and are not designed to be interesting, but rather build up ‘muscle memory’. *Each* line of code that you write, you *must* save the file and run the code. If there are *any* errors, you fix them then and there. If in doubt, puts out the structure you have made to make sure that it is what you hoped it was. I’m looking for accuracy - I want the instructions followed precisely. It will be your choice of class and variable names (etc), but the functioning and number of attributes called for are immutable. Ideally you’ll want the work to be checked, so copy and paste this text into a file and comment it out, so that I can check it easily - put the answer directly below the question.
 
 // 1. Make a function that takes two arguments, and returns the result of them added together.
+function add(a, b) {
+    return a + b
+}
+
+console.log(add(1, 4))
 // 2. Call the above function four times with different inputs each time. Make at least some of the inputs floats. 
 // 3. Define two integer and two float variables, and use them as arguments to this method you have made.
 // ============================================
