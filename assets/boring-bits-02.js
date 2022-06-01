@@ -1,12 +1,27 @@
 // The next set of drills are a bit more difficult. I know that sometimes it might be hard to work out what is meant by the question, but I ask that you stay with it and do your best to piece it apart - sometimes it is hard to express these questions without some confusion. I am happy to give answers to some of the questions if that will help with the understanding so that you can move forward. Where a question asks for a log to screen, the simplest thing will be to log the name of the function. Most times in these questions it is not what the function does that will be important, but rather how that function sits within the object, or even within the other function.
 
 // 1. Define an object that has two keys. One will have the value of a string, and the other a function (and this function can simply log its own name to screen).
+const funk = {
+    'string': "How long is this?",
+    hey() { console.log("I'm a function.")}
+}
 // 2. Log the string to screen.
+console.log(funk['string'])
 // 3. Log the entire function to screen.
-// 4. Invoke the function within the object. 
+console.log(funk.hey)
+// 4. Invoke the function within the object.
+console.log(funk.hey())
 // ============================================
 // 5. Define an object that has three keys, and each key has the value of an anonymous function. In each function log something to screen (different in each function).
+const gun = {
+    'chamber1': () => console.log('Bang!'),
+    'chamber2': () => console.log('Bang!'),
+    'chamber3': () => console.log('Click. Oh dang bro I misfired! Quick, look down the eye of the barrel!')
+}
 // 6. Call each function (through the object).
+console.log(gun.chamber1())
+console.log(gun.chamber2())
+console.log(gun.chamber3())
 // ============================================
 // 7. Make a function that returns an object that has two keys, one key with a string value, and the other that has an anonymous function as its value. 
 // 8. Log to screen the result of invoking this function.
