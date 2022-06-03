@@ -4,13 +4,15 @@
 CHALLENGE 2
 Answer following Qustions:
 1. Why no error is generated after the line 14?
+because the value was successfully pushed to the array.
 2. Why after the line 19 TypeError is generated?
+Because the constant is already defined. It cannot be redeclared.
 Change one line of code so, that error will go away.
 Don't change lines 14, 19.
 */
 
 "use strict";
-const arr = [1, 2];
+let arr = [1, 2];
 arr.push(3);
 console.log(arr);
 // [1, 2, 3]
